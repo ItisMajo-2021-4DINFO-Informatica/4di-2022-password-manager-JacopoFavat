@@ -4,24 +4,24 @@
              x:Class="Notes.Views.NoteEntryPage"
              Title="Inserisci l tue note">
     <!-- Layout children vertically -->
-    <StackLayout Margin="20">
+    <StackLayout Margin="20" >
         <Editor Placeholder="NomeServizio"
                 Text="{Binding ServiceName}"
                 TextColor="black"
-                PlaceholderColor="DarkSeaGreen"
+                PlaceholderColor="red"
                 HeightRequest="100" />
         <Editor Placeholder="NomeUtente"
                 TextColor="black"
                 Text="{Binding Username}"
-                 PlaceholderColor="DarkSeaGreen"
+                 PlaceholderColor="red"
                 HeightRequest="100" />
         <Editor Placeholder="Password"
-                PlaceholderColor="DarkSeaGreen"
+                PlaceholderColor="red"
                 TextColor="black"
                 Text="{Binding Password}"
                 HeightRequest="100" />
         <Editor Placeholder="URL"
-                PlaceholderColor="DarkSeaGreen"
+                PlaceholderColor="red"
                 TextColor="black"
                 Text="{Binding URL}"
                 HeightRequest="100" />
@@ -31,7 +31,8 @@
             <Button Text="Save"
                     TextColor="White"
                     Clicked="OnSaveButtonClicked" 
-                    BackgroundColor="Black"/>
+                    BackgroundColor="Black"
+                    />
                     
                      
             <Button Grid.Column="1"

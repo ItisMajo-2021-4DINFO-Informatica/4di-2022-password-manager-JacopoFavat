@@ -5,8 +5,9 @@
              Title="Notes">
     <!-- Add an item to the toolbar -->
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add"
-                     Clicked="OnAddClicked" />
+        <ToolbarItem Text="Aggiungi nota"
+                     Clicked="OnAddClicked"
+                     />
         
                      
     </ContentPage.ToolbarItems>
@@ -14,6 +15,7 @@
     <!-- Display notes in a list -->
     <CollectionView x:Name="collectionView"
                     Margin="20"
+                    
                     
                     SelectionMode="Single"
                     SelectionChanged="OnSelectionChanged">
@@ -26,10 +28,11 @@
             <DataTemplate>
                 <StackLayout>
                     <Label Text="{Binding ServiceName}"
-                           FontSize="Medium"/>
+                           FontSize="Medium"
+                              TextColor="Black"/>
                             
                     <Label Text="{Binding Date}"
-                           TextColor="DarkSeaGreen"
+                           TextColor="Red"
                            FontSize="Small" />
                 </StackLayout>
             </DataTemplate>
