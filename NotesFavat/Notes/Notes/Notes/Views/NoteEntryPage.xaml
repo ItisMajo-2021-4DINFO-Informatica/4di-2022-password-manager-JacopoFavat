@@ -8,9 +8,11 @@
         <Editor Placeholder="NomeServizio"
                 Text="{Binding ServiceName}"
                 TextColor="black"
+                FontAttributes="Bold"
                 PlaceholderColor="red"
                 HeightRequest="100" />
         <Editor Placeholder="NomeUtente"
+                FontAttributes="Bold"
                 TextColor="black"
                 Text="{Binding Username}"
                  PlaceholderColor="red"
@@ -18,9 +20,11 @@
         <Editor Placeholder="Password"
                 PlaceholderColor="red"
                 TextColor="black"
+                FontAttributes="Bold"
                 Text="{Binding Password}"
                 HeightRequest="100" />
         <Editor Placeholder="URL"
+                FontAttributes="Bold"
                 PlaceholderColor="red"
                 TextColor="black"
                 Text="{Binding URL}"
