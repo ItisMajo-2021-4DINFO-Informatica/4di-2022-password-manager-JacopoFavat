@@ -25,7 +25,7 @@
                     <Label Text="{Binding ServiceName}"
                            FontSize="Medium"/>
                     <Label Text="{Binding Date}"
-                           TextColor="Silver"
+                           TextColor="DarkSeaGreen"
                            FontSize="Small" />
                 </StackLayout>
             </DataTemplate>

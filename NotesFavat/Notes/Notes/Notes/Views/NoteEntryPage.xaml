@@ -7,22 +7,28 @@
     <StackLayout Margin="20">
         <Editor Placeholder="ServiceName"
                 Text="{Binding ServiceName}"
+                TextColor="DarkSeaGreen"
                 HeightRequest="100" />
         <Editor Placeholder="Username"
+                TextColor="DarkSeaGreen"
                 Text="{Binding Username}"
                 HeightRequest="100" />
         <Editor Placeholder="Password"
+                TextColor="DarkSeaGreen"
                 Text="{Binding Password}"
                 HeightRequest="100" />
         <Editor Placeholder="URL"
+                TextColor="DarkSeaGreen"
                 Text="{Binding URL}"
                 HeightRequest="100" />
         <!-- Layout children in two columns -->
         <Grid ColumnDefinitions="*,*">
             <Button Text="Save"
+                    TextColor="Blue"
                     Clicked="OnSaveButtonClicked" />
             <Button Grid.Column="1"
                     Text="Delete"
+                    TextColor="Blue"
                     Clicked="OnDeleteButtonClicked"/>
         </Grid>
     </StackLayout>
