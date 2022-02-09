@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Notes.Views.AboutPage"
-             Title="About">
+             Title="Informazioni sulla pagina">
     <!-- Layout children in two rows -->
     <Grid RowDefinitions="Auto,*">
         <Image Source="xamarin_logo.png"
@@ -20,7 +20,8 @@
                             <Span Text="Notes"
                                   FontAttributes="Bold"
                                   FontSize="22" />
-                            <Span Text=" v1.0" />
+                            <Span Text=" Versione 1.0 sviluppata da Jacopo Favat"
+                                   FontAttributes="Bold"/>
                         </FormattedString.Spans>
                     </FormattedString>
                 </Label.FormattedText>

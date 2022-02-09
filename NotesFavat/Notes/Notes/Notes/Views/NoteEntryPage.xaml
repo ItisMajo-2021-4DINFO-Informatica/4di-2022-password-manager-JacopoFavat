@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Notes.Views.NoteEntryPage"
-             Title="Inserisci l tue note">
+             Title="Inserisci le tue note">
     <!-- Layout children vertically -->
     <StackLayout Margin="20" >
         <Editor Placeholder="NomeServizio"
@@ -32,7 +32,7 @@
         <!-- Layout children in two columns -->
         <Grid ColumnDefinitions="*,*">
 
-            <Button Text="Save"
+            <Button Text="Salva nota"
                     TextColor="White"
                     Clicked="OnSaveButtonClicked" 
                     BackgroundColor="Black"
@@ -40,7 +40,7 @@
                     
                      
             <Button Grid.Column="1"
-                    Text="Delete"
+                    Text="Cancella nota"
                     TextColor="White"
                     BackgroundColor="Black"
                     Clicked="OnDeleteButtonClicked"/>
