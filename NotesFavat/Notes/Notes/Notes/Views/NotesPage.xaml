@@ -33,7 +33,7 @@
                               TextColor="Black"/>
                             
                     <Label Text="{Binding Date}"
-                           TextColor="Red"
+                           TextColor="Blue"
                            FontSize="Small" />
                 </StackLayout>
             </DataTemplate>
