@@ -7,11 +7,14 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add"
                      Clicked="OnAddClicked" />
+        
+                     
     </ContentPage.ToolbarItems>
 
     <!-- Display notes in a list -->
     <CollectionView x:Name="collectionView"
                     Margin="20"
+                    
                     SelectionMode="Single"
                     SelectionChanged="OnSelectionChanged">
         <CollectionView.ItemsLayout>
@@ -24,6 +27,7 @@
                 <StackLayout>
                     <Label Text="{Binding ServiceName}"
                            FontSize="Medium"/>
+                            
                     <Label Text="{Binding Date}"
                            TextColor="DarkSeaGreen"
                            FontSize="Small" />

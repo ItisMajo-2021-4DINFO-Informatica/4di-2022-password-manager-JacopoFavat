@@ -2,33 +2,42 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Notes.Views.NoteEntryPage"
-             Title="Note Entry">
+             Title="Inserisci l tue note">
     <!-- Layout children vertically -->
     <StackLayout Margin="20">
-        <Editor Placeholder="ServiceName"
+        <Editor Placeholder="NomeServizio"
                 Text="{Binding ServiceName}"
-                TextColor="DarkSeaGreen"
+                TextColor="black"
+                PlaceholderColor="DarkSeaGreen"
                 HeightRequest="100" />
-        <Editor Placeholder="Username"
-                TextColor="DarkSeaGreen"
+        <Editor Placeholder="NomeUtente"
+                TextColor="black"
                 Text="{Binding Username}"
+                 PlaceholderColor="DarkSeaGreen"
                 HeightRequest="100" />
         <Editor Placeholder="Password"
-                TextColor="DarkSeaGreen"
+                PlaceholderColor="DarkSeaGreen"
+                TextColor="black"
                 Text="{Binding Password}"
                 HeightRequest="100" />
         <Editor Placeholder="URL"
-                TextColor="DarkSeaGreen"
+                PlaceholderColor="DarkSeaGreen"
+                TextColor="black"
                 Text="{Binding URL}"
                 HeightRequest="100" />
         <!-- Layout children in two columns -->
         <Grid ColumnDefinitions="*,*">
+
             <Button Text="Save"
-                    TextColor="Blue"
-                    Clicked="OnSaveButtonClicked" />
+                    TextColor="White"
+                    Clicked="OnSaveButtonClicked" 
+                    BackgroundColor="Black"/>
+                    
+                     
             <Button Grid.Column="1"
                     Text="Delete"
-                    TextColor="Blue"
+                    TextColor="White"
+                    BackgroundColor="Black"
                     Clicked="OnDeleteButtonClicked"/>
         </Grid>
     </StackLayout>

@@ -44,7 +44,7 @@ namespace Notes.Views
             }
             catch (Exception)
             {
-                Console.WriteLine("Failed to load note.");
+                Console.WriteLine("Fallito caricamento dela nota.");
             }
         }
 
@@ -77,7 +77,7 @@ namespace Notes.Views
         }
 
         async void OnDeleteButtonClicked(object sender, EventArgs e)
-        {
+        { 
             var note = (Note)BindingContext;
 
             // Delete the file.
@@ -86,6 +86,7 @@ namespace Notes.Views
                 File.Delete(note.Filename);
             }
 
+            
             // Navigate backwards
             await Shell.Current.GoToAsync("..");
         }
